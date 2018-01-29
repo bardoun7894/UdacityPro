@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  android:background="@drawable/backFlat"
+
+    >
+
+
+    <ImageView
+
+        android:alpha="0.5"
+        android:src="@drawable/Violet"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/imageView" />
+    <TextView
+        android:id="@+id/uda"
+        android:text="Uda"
+        android:textSize="60dp"
+        android:fontFamily="cursive"
+        android:textColor="#fff"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+       android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+     />
+    <TextView
+        android:layout_toRightOf="@+id/uda"
+        android:text="App"
+        android:textSize="48dp"
+        android:fontFamily="cursive"
+        android:textColor="#A73763"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+      android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLog"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/username"
+
+            android:hint="  username"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/password"
+
+            android:hint="  password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="2dp"
+            android:text="Forget Password ?"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="25dp"
+
+            android:layout_marginTop="15dp"
+            android:background="@drawable/Logink" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fac"
+        android:layout_below="@+id/linearLog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facel"
+        android:layout_marginTop="30dp"
+    android:layout_marginLeft="80dp"
+        />
+    <ImageButton
+        android:layout_below="@+id/fac"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lofinwfa"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        />
+
+
+
+</RelativeLayout>
